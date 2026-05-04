@@ -1,8 +1,10 @@
 @import "tailwindcss";
+@plugin "@tailwindcss/typography";
 
 :root {
   --background: #ffffff;
-  --foreground: #1e293b; /* slate-800 */
+  --foreground: #1e293b;
+  /* slate-800 */
 }
 
 @theme inline {
@@ -12,11 +14,24 @@
   --font-mono: var(--font-geist-mono);
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: var(--font-sans), system-ui, -apple-system, sans-serif;
-  overflow-x: hidden;
+/* Custom Cursor - Default State */
+html,
+body,
+* {
+  cursor: url('/theme-cursor.svg?v=1') 0 0, auto !important;
+}
+
+/* Custom Cursor - Interactive/Pointer State */
+a,
+button,
+[role="button"],
+input[type="submit"],
+input[type="button"],
+.interactive,
+a *,
+button *,
+[role="button"] * {
+  cursor: url('/theme-pointer.svg?v=1') 0 0, pointer !important;
 }
 
 html {

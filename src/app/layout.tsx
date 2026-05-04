@@ -15,6 +15,9 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Shadman Ahmmed — Cross-Platform Developer",
   description: "CSE student and cross-platform app developer building fast, reliable applications for Windows, iOS, macOS and Android using Flutter.",
+  icons: {
+    icon: "/logo.png",
+  },
 };
 
 export default function RootLayout({

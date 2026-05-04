@@ -259,7 +259,7 @@ export default function Home() {
       {/* ═══════════════════════════════════════════
           HERO SECTION (Beautiful Sky & Mountains)
           ═══════════════════════════════════════════ */}
-      <section className="relative h-screen min-h-[650px] w-full bg-gradient-to-b from-sky-300 via-sky-200 to-sky-50 flex flex-col items-center justify-start pt-32 overflow-hidden">
+      <section className="relative min-h-screen w-full bg-gradient-to-b from-sky-300 via-sky-200 to-sky-50 flex flex-col items-center justify-start pt-32 pb-20 overflow-visible">
 
         <Snowfall />
 
@@ -345,8 +345,8 @@ export default function Home() {
           >
             {[
               { href: "https://github.com/CoderBoxer", label: "GitHub", icon: GithubIcon },
-              { href: "https://linkedin.com", label: "LinkedIn", icon: LinkedinIcon },
-              { href: "mailto:contact@example.com", label: "Email", icon: Mail },
+              { href: "https://www.linkedin.com/in/shadman-a-67a361b8/", label: "LinkedIn", icon: LinkedinIcon },
+              { href: "mailto:boxercoder@gmail.com", label: "Email", icon: Mail },
             ].map((link) => (
               <Link
                 key={link.label}
